@@ -1,0 +1,98 @@
+<div class="footer pure-g">
+  <div class="pure-u-1-24 pure-u-md-1-6"></div>
+  <div class="pure-u-11-12 pure-u-md-2-3">
+    <div class="footer-content">
+      <div class="pure-menu pure-menu-horizontal">
+        <ul>
+          {{ if .Site.Author.name }}
+          <li class="pure-menu-item" id="foot-name">@{{ .Site.Author.name }}</li>
+          {{ end }}
+
+          {{ if .Site.Author.email }}
+          <li class="pure-menu-item">
+            <a data-name="{{ index (split .Site.Author.email "@") 0 }}" 
+               data-domain="{{ index (split .Site.Author.email "@") 1 }}" 
+               href="#"
+               onfocus="this.href='mailto:'+this.getAttribute('data-name')+'@'+this.getAttribute('data-domain')"
+               class="pure-menu-link">Email</a>
+          </li>
+          {{ end }}
+
+          {{ if .Site.Author.github }}
+          <li class="pure-menu-item">
+            <a href="https://github.com/{{ .Site.Author.github }}" class="pure-menu-link">GitHub</a>
+          </li>
+          {{ end }}
+
+          {{ if .Site.Author.twitter }}
+          <li class="pure-menu-item">
+            <a href="https://twitter.com/{{ .Site.Author.twitter }}" class="pure-menu-link">Twitter</a>
+          </li>
+          {{ end }}
+
+          {{ if .Site.Author.medium }}
+          <li class="pure-menu-item">
+            <a href="https://medium.com/@{{ .Site.Author.medium }}" class="pure-menu-link">Medium</a>
+          </li>
+          {{ end }}
+
+        </ul>
+        <a href="#" class="pure-menu-link pull-right" id="gototop-btn">↑↑</a>
+        <a href="{{ .RSSLink }}" class="pure-menu-link pull-right">RSS</a>
+      </div>
+      <p id="foot-copyright" style="text-align: center;">
+      {{ if .Site.Copyright }}
+      {{ .Site.Copyright | safeHTML }}
+      {{ end }}
+      {{ if .Site.Params.IcpLicense }}
+      &nbsp;
+      <span><a style="text-decoration: none" target="_blank" href="http://www.miibeian.gov.cn/">{{ .Site.Params.IcpLicense | safeHTML }}</a></span>
+      {{ end }}
+      {{ if .Site.Params.PoliceLicense }}
+      &nbsp;
+      <span ><a style="text-decoration: none;" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode={{ index (findRE "\\d+" .Site.Params.PoliceLicense 1) 0 }}">
+      <img src="/img/beian.png" style="width: 1.3em;height: 1.3em;vertical-align: top" />{{ .Site.Params.PoliceLicense }}
+      </a></span>
+      {{ end }}
+      </p>
+    </div>
+  </div>
+  <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<!--- highlight js -->
+{{ if isset .Site.Params "highlight" }}
+  <script src="{{ .Site.BaseURL }}highlight/highlight.min.js"></script>
+  {{ range .Site.Params.hjslangs }}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{.}}.min.js"></script>
+  {{ end }} 
+  <script>hljs.initHighlighting();</script>
+{{ end }}
+
+<script type="text/javascript">
+  go();
+  window.addEventListener('resize', go);
+  function go(){
+    var d=document.querySelector(".desktop")
+    if(document.documentElement.clientWidth > 768) {
+      d.style.display="";
+    } else {
+      d.style.display="none";
+    }
+  }
+</script>
+<script type="text/javascript">
+  var a=document.querySelector("#toggle-btn"),b=document.querySelector("#toggle-content");a.addEventListener("click",function(){""==b.style.display?(b.style.display="none",a.innerHTML="☰"):(b.style.display="",a.innerHTML="X")});</script>
+<!-- Google analytics -->
+{{ if .Site.Author.gaid }}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '{{ .Site.Author.gaid }}', 'auto');
+  ga('send', 'pageview');
+</script>
+{{ end }}
+</body>
+</html>

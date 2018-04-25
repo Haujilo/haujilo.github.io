@@ -1,0 +1,21 @@
+baseURL = "http://localhost/"
+languageCode = "zh-Hans"
+title = "Luo Yuhao"
+theme = "temple"
+hasCJKLanguage = true
+copyright = "Copyright &copy; 2018 haujilo.xyz All Rights Reserved."
+
+[author]
+  name = "Luo Yuhao"
+  github = "Haujilo"
+  email = "luoyuhao@haujilo.xyz"
+  twitter = "Haujilo"
+
+[params]
+  highlight = true
+  hjslangs = ["go", "vim"]
+  topmenu = "categories"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

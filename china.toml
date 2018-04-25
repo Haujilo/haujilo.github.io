@@ -1,0 +1,5 @@
+publishDir = "china"
+
+[params]
+  icpLicense = "粤ICP备18085143号"
+  policeLicense = "粤公网安备44011302001605号"

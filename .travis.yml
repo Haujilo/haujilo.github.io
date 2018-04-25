@@ -1,0 +1,36 @@
+language: go
+sudo: true
+dist: trusty
+git:
+  depth: 1
+branches:
+  only:
+  - content
+
+before_install:
+  - curl -L -o ~/release-cosfs-package.deb ${TENCENT_COSFS_DOWNLOAD_URL}
+  - git clone -b trunk https://github.com/${TRAVIS_REPO_SLUG}.git trunk
+  - git clone -b content https://github.com/${TRAVIS_REPO_SLUG}.git trunk/content
+  - cd trunk && git submodule init && git submodule update
+
+install:
+  - sudo apt-get --yes install snapd mime-support gdebi-core
+  - sudo gdebi --non-interactive ~/release-cosfs-package.deb
+  - sudo snap install hugo
+  - echo "$(echo ${TENCENT_COS_BUCKET_NAME} | cut -d '-' -f1):${TENCENT_YUN_ID}:${TENCENT_YUN_KEY}" | sudo tee /etc/passwd-cosfs > /dev/null && sudo chmod 640 /etc/passwd-cosfs && sudo chown $(whoami) /etc/passwd-cosfs
+  - mkdir -p ~/.tencent && cosfs ${TENCENT_COS_BUCKET_NAME} ~/.tencent -ourl=${TENCENT_COS_ENDPOINT}
+
+script:
+  - /snap/bin/hugo --config config.toml,production.toml
+  - /snap/bin/hugo --config config.toml,production.toml,china.toml
+  - rsync -czvr --delete china/ ~/.tencent/
+
+deploy:
+  provider: pages
+  local-dir: trunk/public
+  skip-cleanup: true
+  target-branch: master
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: content
+  verbose: true

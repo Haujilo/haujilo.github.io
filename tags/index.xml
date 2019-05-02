@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Luo Yuhao</title>
+    <link>https://www.haujilo.xyz/tags/</link>
+    <description>Recent content in Tags on Luo Yuhao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <managingEditor>luoyuhao@haujilo.xyz (Luo Yuhao)</managingEditor>
+    <webMaster>luoyuhao@haujilo.xyz (Luo Yuhao)</webMaster>
+    <copyright>Copyright &amp;copy; 2018 haujilo.xyz All Rights Reserved.</copyright>
+    <lastBuildDate>Mon, 29 Apr 2019 21:11:55 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.haujilo.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ci</title>
+      <link>https://www.haujilo.xyz/tags/ci/</link>
+      <pubDate>Mon, 29 Apr 2019 21:11:55 +0800</pubDate>
+      <author>luoyuhao@haujilo.xyz (Luo Yuhao)</author>
+      <guid>https://www.haujilo.xyz/tags/ci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://www.haujilo.xyz/tags/docker/</link>
+      <pubDate>Mon, 29 Apr 2019 21:11:55 +0800</pubDate>
+      <author>luoyuhao@haujilo.xyz (Luo Yuhao)</author>
+      <guid>https://www.haujilo.xyz/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://www.haujilo.xyz/tags/python/</link>
+      <pubDate>Mon, 29 Apr 2019 21:11:55 +0800</pubDate>
+      <author>luoyuhao@haujilo.xyz (Luo Yuhao)</author>
+      <guid>https://www.haujilo.xyz/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://www.haujilo.xyz/tags/git/</link>
+      <pubDate>Sun, 28 Apr 2019 15:38:40 +0800</pubDate>
+      <author>luoyuhao@haujilo.xyz (Luo Yuhao)</author>
+      <guid>https://www.haujilo.xyz/tags/git/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

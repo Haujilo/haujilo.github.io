@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ci on Luo Yuhao</title>
+    <link>https://www.haujilo.xyz/tags/ci/</link>
+    <description>Recent content in ci on Luo Yuhao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <managingEditor>luoyuhao@haujilo.xyz (Luo Yuhao)</managingEditor>
+    <webMaster>luoyuhao@haujilo.xyz (Luo Yuhao)</webMaster>
+    <copyright>Copyright &amp;copy; 2018 haujilo.xyz All Rights Reserved.</copyright>
+    <lastBuildDate>Mon, 29 Apr 2019 21:11:55 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.haujilo.xyz/tags/ci/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用Docker多阶段构建和打包python项目</title>
+      <link>https://www.haujilo.xyz/posts/use-docker-multi-stage-build-and-package-python-project/</link>
+      <pubDate>Mon, 29 Apr 2019 21:11:55 +0800</pubDate>
+      <author>luoyuhao@haujilo.xyz (Luo Yuhao)</author>
+      <guid>https://www.haujilo.xyz/posts/use-docker-multi-stage-build-and-package-python-project/</guid>
+      <description>最近在新厂做了一个Python技术栈相关项目，是通过Gitlab CI用docker-in-docker方式多阶段构建项目的，遇到一些问题，记</description>
+    </item>
+    
+  </channel>
+</rss>

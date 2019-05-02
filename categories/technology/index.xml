@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>technology on Luo Yuhao</title>
+    <link>https://www.haujilo.xyz/categories/technology/</link>
+    <description>Recent content in technology on Luo Yuhao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <managingEditor>luoyuhao@haujilo.xyz (Luo Yuhao)</managingEditor>
+    <webMaster>luoyuhao@haujilo.xyz (Luo Yuhao)</webMaster>
+    <copyright>Copyright &amp;copy; 2018 haujilo.xyz All Rights Reserved.</copyright>
+    <lastBuildDate>Mon, 29 Apr 2019 21:11:55 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.haujilo.xyz/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用Docker多阶段构建和打包python项目</title>
+      <link>https://www.haujilo.xyz/posts/use-docker-multi-stage-build-and-package-python-project/</link>
+      <pubDate>Mon, 29 Apr 2019 21:11:55 +0800</pubDate>
+      <author>luoyuhao@haujilo.xyz (Luo Yuhao)</author>
+      <guid>https://www.haujilo.xyz/posts/use-docker-multi-stage-build-and-package-python-project/</guid>
+      <description>最近在新厂做了一个Python技术栈相关项目，是通过Gitlab CI用docker-in-docker方式多阶段构建项目的，遇到一些问题，记</description>
+    </item>
+    
+    <item>
+      <title>Git在项目管理中的正确运用</title>
+      <link>https://www.haujilo.xyz/posts/use-git-correctly/</link>
+      <pubDate>Sun, 28 Apr 2019 15:38:40 +0800</pubDate>
+      <author>luoyuhao@haujilo.xyz (Luo Yuhao)</author>
+      <guid>https://www.haujilo.xyz/posts/use-git-correctly/</guid>
+      <description>如今，Git已经成为程序员必备技能之一，也是众多公司的代码管理工具。然而，据我本人观察，这么多年来，特别是有了GitLab这类中心仓库工具之</description>
+    </item>
+    
+    <item>
+      <title>网站说明</title>
+      <link>https://www.haujilo.xyz/posts/readme/</link>
+      <pubDate>Fri, 12 Oct 2018 20:01:44 +0800</pubDate>
+      <author>luoyuhao@haujilo.xyz (Luo Yuhao)</author>
+      <guid>https://www.haujilo.xyz/posts/readme/</guid>
+      <description>本文主要通过建立本站的流程，描述建站成本、技术栈和架构、折腾心得。文章根据以上所述的变更而变更，力求维持最新。 建站流程 核算成本 购买域名 域名实</description>
+    </item>
+    
+  </channel>
+</rss>
